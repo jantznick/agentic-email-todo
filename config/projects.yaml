@@ -1,0 +1,28 @@
+# Project and label vocabulary for the LLM + Vikunja ID maps.
+# Fill in real Vikunja IDs after creating projects/labels in Vikunja.
+# Names are matched case-insensitively.
+
+projects:
+  # fallback target for low-confidence / unknown routing
+  - name: Email Inbox
+    id: 1
+  - name: Home
+    id: 2
+  - name: Work
+    id: 3
+
+labels:
+  - name: needs-grooming
+    id: 1
+  - name: urgent
+    id: 2
+  - name: errand
+    id: 3
+  - name: follow-up
+    id: 4
+
+# Optional routing hints shown to the model (not used as hard rules)
+routing_hints: |
+  - Bills, utilities, insurance → Home
+  - Work email, meetings, PRs → Work
+  - Unclear or personal catch-all → Email Inbox
