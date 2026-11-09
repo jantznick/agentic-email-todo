@@ -2,4 +2,4 @@ imap-tools==1.7.4
 redis==5.2.1
 PyYAML==6.0.2
 python-dotenv==1.0.1
-pypdf==5.1.0
+pypdf==6.21.4
